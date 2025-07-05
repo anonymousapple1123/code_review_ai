@@ -4,31 +4,93 @@ import requests
 import json
 
 OLLAMA_API_URL = "http://localhost:11434/api/chat"
-MODEL_NAME = "qwen2.5-coder"  # make sure this matches what you run in ollama
+MODEL_NAME = "qwen2.5-coder"
 
 
-def run_code_review(code: str) -> str:
-    """Sends the Python code to the LLM and returns the review response."""
+def stream_code_review(code: str):
     prompt = build_prompt(code)
 
     payload = {
         "model": MODEL_NAME,
+        "stream": True,
         "messages": [
-            {"role": "system", "content": "You are an expert software engineer tasked with reviewing Python code. Provide feedback on structure, readability, best practices, potential bugs, and suggestions for improvement."},
-            {"role": "user", "content": prompt}
-        ],
-        "stream": False
+            {
+                "role": "system",
+                "content": (
+                    "You are an expert software engineer. Provide a detailed review of the following Python code. "
+                    "Comment on correctness, bugs, readability, performance, and possible improvements."
+                )
+            },
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ]
     }
 
     try:
-        response = requests.post(OLLAMA_API_URL, json=payload)
-        response.raise_for_status()
-        data = response.json()
-        return data.get("message", {}).get("content", "[No response from LLM]")
+        with requests.post(OLLAMA_API_URL, json=payload, stream=True) as response:
+            response.raise_for_status()
+            for line in response.iter_lines():
+                if not line:
+                    continue
+                line = line.decode("utf-8")
+                if line.startswith("data: "):
+                    line = line[len("data: "):]
+                try:
+                    data = json.loads(line)
+                    token = data.get("message", {}).get("content", "")
+                    if token:
+                        yield token
+                except json.JSONDecodeError:
+                    continue
     except Exception as e:
-        raise RuntimeError(f"Failed to get review from LLM: {e}")
+        yield f"[ERROR] Failed to stream from LLM: {str(e)}"
+
+
+def stream_follow_up(original_review: str, question: str):
+    """
+    Sends a follow-up question to the LLM using context from the original review.
+    Streams the response token by token.
+    """
+    payload = {
+        "model": MODEL_NAME,
+        "stream": True,
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are an AI code reviewer continuing a conversation. Use the previous review as context."
+            },
+            {
+                "role": "user",
+                "content": f"Here is the review:\n\n{original_review}"
+            },
+            {
+                "role": "user",
+                "content": f"Follow-up question:\n\n{question}"
+            }
+        ]
+    }
+
+    try:
+        with requests.post(OLLAMA_API_URL, json=payload, stream=True) as response:
+            response.raise_for_status()
+            for line in response.iter_lines():
+                if not line:
+                    continue
+                line = line.decode("utf-8")
+                if line.startswith("data: "):
+                    line = line[len("data: "):]
+                try:
+                    data = json.loads(line)
+                    token = data.get("message", {}).get("content", "")
+                    if token:
+                        yield token
+                except json.JSONDecodeError:
+                    continue
+    except Exception as e:
+        yield f"[ERROR] Failed to stream follow-up: {str(e)}"
 
 
 def build_prompt(code: str) -> str:
-    """Wraps the code in a prompt that the LLM can understand."""
     return f"Please review the following Python code:\n\n```python\n{code}\n```"
