@@ -70,3 +70,62 @@ conda activate code_review
 ```
 pip install -r requirements.txt
 ```
+
+🤖 LLM Setup (Ollama)
+1. Install Ollama
+
+Supports macOS (including M1/M2/M4), Linux.
+2. Pull the LLM
+```
+ollama pull qwen2.5-coder
+```
+
+3. Run the Model
+
+Keep it running in a separate terminal:
+```
+ollama run qwen2.5-coder
+```
+
+This hosts a local HTTP API at http://localhost:11434.
+🖥️ Run the Application
+
+python app.py
+
+🔐 Security & Design
+
+    ✅ All code reviews are processed locally
+
+    ✅ Your code is never uploaded
+
+    🔒 Future: Docker-based execution for sandboxing user scripts
+
+    🧵 Threaded backend ensures smooth UI
+
+🛠️ Tech Stack
+
+    PyQt6
+
+    Ollama
+
+    Qwen2.5-Coder (14B)
+
+    requests, os, threading, QRunnable, etc.
+
+📦 Future Features
+
+Typing animation / review status UI
+
+Project-wide code review (multi-file)
+
+Support for other languages: C++, Java, JS
+
+💬 Feedback & Contributions
+
+Feel free to fork, extend, or submit issues. PRs are welcome!
+
+📄 License
+
+MIT License. Do whatever you want — just don’t blame me.
+
+
