@@ -16,7 +16,7 @@ A modern, privacy-focused Python GUI application for reviewing code using a loca
 ---
 
 ## 📁 Project Structure
-
+```
 code_review_app/
 ├── app.py # App entry point
 ├── gui/
@@ -38,7 +38,7 @@ code_review_app/
 │
 ├── requirements.txt
 └── README.md # This file
-
+```
 
 ---
 
