@@ -73,7 +73,7 @@ class MainWindow(QMainWindow):
 
         self.review_output = QTextBrowser()
         self.review_output.setPlaceholderText("Your code review will appear here...")
-        self.review_output.setMinimumHeight(790)  # or any height that suits your screen
+        self.review_output.setMinimumHeight(700)  # or any height that suits your screen
         self.review_output.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Preferred)
 
        
