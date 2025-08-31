@@ -1,4 +1,4 @@
-#!/home/fyodor/VScode/GitProject/code_review_ai/venv/bin/python3
+#!/Users/ayushkumar/Code/MGitRepo/code_review_ai/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
