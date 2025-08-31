@@ -1,2 +1,17 @@
-pyqt6>=6.5
-requests>=2.31
+PyQt6==6.7.0
+requests==2.31.0
+pybind11==2.11.1
+cmake==3.27.7
+setuptools-scm>=8.0.0
+wheel>=0.41.0
+numpy>=1.24.0
+
+# Development dependencies
+pytest>=7.4.0
+pytest-qt>=4.2.0
+black>=23.7.0
+flake8>=6.0.0
+
+# Optional performance monitoring
+psutil>=5.9.0
+memory-profiler>=0.61.0

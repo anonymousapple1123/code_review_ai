@@ -1,0 +1,75 @@
+2025-08-20 22:29:57,923 - llm_interface.qwen_runner - INFO - Initialized LLM client for model: qwen2.5-coder
+2025-08-20 22:29:57,923 - llm_interface.review_task - WARNING - C++ performance module not available for streaming optimization
+2025-08-20 22:29:57,925 - __main__ - INFO - Starting Code Review Assistant v2.0.0
+2025-08-20 22:29:58,740 - __main__ - INFO - Ollama service is available
+2025-08-20 22:32:03,044 - gui.main_window - INFO - MainWindow initialized successfully
+2025-08-20 22:32:03,224 - __main__ - INFO - Application started successfully
+2025-08-20 22:32:30,776 - gui.main_window - ERROR - Error loading file info: 'FileLoader' object has no attribute 'get_file_info'
+2025-08-20 22:32:48,041 - gui.main_window - ERROR - Error loading file info: 'FileLoader' object has no attribute 'get_file_info'
+2025-08-20 22:35:10,104 - gui.main_window - ERROR - Error loading file info: 'FileLoader' object has no attribute 'get_file_info'
+2025-08-20 22:36:37,857 - llm_interface.qwen_runner - INFO - LLM connection test successful
+2025-08-20 22:36:42,409 - gui.main_window - INFO - Theme changed to: dark
+2025-08-20 22:36:44,074 - gui.main_window - INFO - Theme changed to: light
+2025-08-20 22:36:44,711 - gui.main_window - INFO - Theme changed to: dark
+2025-08-20 22:36:47,038 - gui.main_window - INFO - Application closing
+2025-08-20 22:39:23,453 - llm_interface.qwen_runner - INFO - Initialized LLM client for model: qwen2.5-coder
+2025-08-20 22:39:23,454 - llm_interface.review_task - WARNING - C++ performance module not available for streaming optimization
+2025-08-20 22:39:23,454 - __main__ - INFO - Starting Code Review Assistant v2.0.0
+2025-08-20 22:39:23,544 - __main__ - INFO - Ollama service is available
+2025-08-20 22:39:28,431 - gui.main_window - INFO - MainWindow initialized successfully
+2025-08-20 22:39:28,596 - __main__ - INFO - Application started successfully
+2025-08-20 22:39:34,269 - gui.main_window - INFO - File selected: /Users/ayushkumar/Code/exported-assets/code_review_app/app.py
+2025-08-20 22:39:46,382 - gui.file_loader - INFO - Successfully loaded file: /Users/ayushkumar/Code/exported-assets/code_review_app/app.py (5526 bytes)
+2025-08-20 22:39:46,385 - llm_interface.review_task - INFO - Created ReviewTask for 5522 characters of code
+2025-08-20 22:39:46,385 - gui.main_window - INFO - Started review task for app.py
+2025-08-20 22:39:46,385 - llm_interface.qwen_runner - INFO - Starting code review stream for 5522 characters of code
+2025-08-20 22:39:56,828 - llm_interface.qwen_runner - ERROR - Error processing stream: startswith first arg must be bytes or a tuple of bytes, not str
+2025-08-20 22:39:56,829 - llm_interface.qwen_runner - ERROR - Non-retryable error: Stream processing error: startswith first arg must be bytes or a tuple of bytes, not str
+2025-08-20 22:39:56,830 - llm_interface.review_task - ERROR - LLM error in ReviewTask: Stream processing error: startswith first arg must be bytes or a tuple of bytes, not str
+2025-08-20 22:40:04,315 - gui.main_window - ERROR - Task error: LLM Error: Stream processing error: startswith first arg must be bytes or a tuple of bytes, not str
+2025-08-20 22:40:05,966 - llm_interface.qwen_runner - INFO - LLM connection test successful
+2025-08-20 22:40:10,389 - llm_interface.review_task - INFO - Task ReviewTask cancelled
+2025-08-20 22:40:10,389 - llm_interface.review_task - INFO - Created ReviewTask for 5522 characters of code
+2025-08-20 22:40:10,389 - gui.main_window - INFO - Started review task for app.py
+2025-08-20 22:40:10,389 - llm_interface.qwen_runner - INFO - Starting code review stream for 5522 characters of code
+2025-08-20 22:40:10,649 - llm_interface.qwen_runner - ERROR - Error processing stream: startswith first arg must be bytes or a tuple of bytes, not str
+2025-08-20 22:40:10,649 - llm_interface.qwen_runner - ERROR - Non-retryable error: Stream processing error: startswith first arg must be bytes or a tuple of bytes, not str
+2025-08-20 22:40:10,649 - llm_interface.review_task - ERROR - LLM error in ReviewTask: Stream processing error: startswith first arg must be bytes or a tuple of bytes, not str
+2025-08-20 22:41:06,768 - gui.main_window - ERROR - Task error: LLM Error: Stream processing error: startswith first arg must be bytes or a tuple of bytes, not str
+2025-08-20 22:41:07,871 - llm_interface.review_task - INFO - Task ReviewTask cancelled
+2025-08-20 22:41:07,872 - gui.main_window - INFO - Application closing
+2025-08-20 22:43:21,706 - llm_interface.qwen_runner - INFO - Initialized LLM client for model: qwen2.5-coder
+2025-08-20 22:43:21,706 - llm_interface.review_task - WARNING - C++ performance module not available for streaming optimization
+2025-08-20 22:43:21,707 - __main__ - INFO - Starting Code Review Assistant v2.0.0
+2025-08-20 22:43:21,815 - __main__ - INFO - Ollama service is available
+2025-08-20 22:43:27,692 - gui.main_window - INFO - MainWindow initialized successfully
+2025-08-20 22:43:27,854 - __main__ - INFO - Application started successfully
+2025-08-20 22:43:47,051 - gui.main_window - INFO - File selected: /Users/ayushkumar/Code/exported-assets/code_review_app/app.py
+2025-08-20 22:43:48,267 - gui.file_loader - INFO - Successfully loaded file: /Users/ayushkumar/Code/exported-assets/code_review_app/app.py (5526 bytes)
+2025-08-20 22:43:48,269 - llm_interface.review_task - INFO - Created ReviewTask for 5522 characters of code
+2025-08-20 22:43:48,270 - gui.main_window - INFO - Started review task for app.py
+2025-08-20 22:43:48,270 - llm_interface.qwen_runner - INFO - Starting code review stream for 5522 characters of code
+2025-08-20 22:44:11,541 - gui.main_window - INFO - Theme changed to: light
+2025-08-20 22:44:13,853 - gui.main_window - INFO - Theme changed to: dark
+2025-08-20 22:44:40,713 - llm_interface.review_task - INFO - ReviewTask completed successfully with 872 tokens
+2025-08-20 22:44:40,726 - gui.main_window - INFO - Task completed successfully
+2025-08-20 22:46:44,749 - llm_interface.review_task - INFO - Task ReviewTask cancelled
+2025-08-20 22:46:44,750 - llm_interface.review_task - INFO - Created FollowUpTask for question: is it functional somewhat?...
+2025-08-20 22:46:44,750 - gui.main_window - INFO - Started follow-up task: is it functional somewhat?...
+2025-08-20 22:46:44,751 - llm_interface.qwen_runner - INFO - Starting follow-up stream for question: is it functional somewhat?...
+2025-08-20 22:47:36,642 - llm_interface.review_task - INFO - FollowUpTask completed successfully with 797 tokens
+2025-08-20 22:47:36,654 - gui.main_window - INFO - Task completed successfully
+2025-08-20 22:48:33,682 - llm_interface.qwen_runner - INFO - LLM connection test successful
+2025-08-20 22:48:36,998 - llm_interface.review_task - INFO - Task FollowUpTask cancelled
+2025-08-20 22:48:36,999 - gui.main_window - INFO - Application closing
+2025-08-31 12:20:13,460 - llm_interface.qwen_runner - INFO - Initialized LLM client for model: qwen2.5-coder
+2025-08-31 12:20:13,460 - llm_interface.review_task - WARNING - C++ performance module not available for streaming optimization
+2025-08-31 12:20:13,461 - __main__ - INFO - Starting Code Review Assistant v2.0.0
+2025-08-31 12:20:34,365 - gui.main_window - INFO - MainWindow initialized successfully
+2025-08-31 12:20:34,530 - __main__ - INFO - Application started successfully
+2025-08-31 12:20:38,772 - llm_interface.qwen_runner - ERROR - LLM connection test failed: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a1d5090>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-08-31 12:20:50,688 - gui.main_window - INFO - Theme changed to: light
+2025-08-31 12:20:51,903 - gui.main_window - INFO - Theme changed to: dark
+2025-08-31 12:20:52,603 - gui.main_window - INFO - Theme changed to: light
+2025-08-31 12:20:54,203 - gui.main_window - INFO - Theme changed to: dark
+2025-08-31 12:21:04,214 - gui.main_window - INFO - Application closing
