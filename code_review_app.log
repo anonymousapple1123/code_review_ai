@@ -73,3 +73,39 @@
 2025-08-31 12:20:52,603 - gui.main_window - INFO - Theme changed to: light
 2025-08-31 12:20:54,203 - gui.main_window - INFO - Theme changed to: dark
 2025-08-31 12:21:04,214 - gui.main_window - INFO - Application closing
+2025-09-14 21:58:53,616 - llm_interface.qwen_runner - INFO - Initialized LLM client for model: qwen2.5-coder
+2025-09-14 21:58:53,616 - llm_interface.review_task - WARNING - C++ performance module not available for streaming optimization
+2025-09-14 21:58:53,619 - __main__ - INFO - Starting Code Review Assistant v2.0.0
+2025-09-14 21:58:53,794 - __main__ - INFO - Ollama service is available
+2025-09-14 21:59:02,330 - gui.main_window - INFO - MainWindow initialized successfully
+2025-09-14 21:59:02,373 - __main__ - INFO - Application started successfully
+2025-09-14 21:59:06,050 - gui.main_window - INFO - Theme changed to: dark
+2025-09-14 21:59:06,998 - gui.main_window - INFO - Theme changed to: light
+2025-09-14 21:59:11,970 - llm_interface.qwen_runner - INFO - LLM connection test successful
+2025-09-14 21:59:26,406 - gui.main_window - INFO - File selected: /home/fyodor/code/github/code_review_ai/test_files/testfile1.py
+2025-09-14 22:00:02,714 - gui.file_loader - INFO - Successfully loaded file: /home/fyodor/code/github/code_review_ai/test_files/testfile1.py (51 bytes)
+2025-09-14 22:00:02,715 - llm_interface.review_task - INFO - Created ReviewTask for 51 characters of code
+2025-09-14 22:00:02,716 - gui.main_window - INFO - Started review task for testfile1.py
+2025-09-14 22:00:02,716 - llm_interface.qwen_runner - INFO - Starting code review stream for 51 characters of code
+2025-09-14 22:01:40,580 - llm_interface.review_task - INFO - ReviewTask completed successfully with 658 tokens
+2025-09-14 22:01:40,583 - gui.main_window - INFO - Task completed successfully
+2025-09-14 22:04:10,441 - llm_interface.review_task - INFO - Task ReviewTask cancelled
+2025-09-14 22:04:10,441 - gui.main_window - INFO - Application closing
+2025-09-15 12:42:58,897 - llm_interface.qwen_runner - INFO - Initialized LLM client for model: qwen2.5-coder
+2025-09-15 12:42:58,898 - llm_interface.review_task - WARNING - C++ performance module not available for streaming optimization
+2025-09-15 12:42:58,901 - __main__ - INFO - Starting Code Review Assistant v2.0.0
+2025-09-15 12:42:59,099 - __main__ - INFO - Ollama service is available
+2025-09-15 12:43:02,147 - gui.main_window - INFO - MainWindow initialized successfully
+2025-09-15 12:43:02,185 - __main__ - INFO - Application started successfully
+2025-09-15 12:43:13,351 - gui.main_window - INFO - File selected: /home/fyodor/code/github/code_review_ai/tests/script_1.py
+2025-09-15 12:43:16,982 - gui.file_loader - INFO - Successfully loaded file: /home/fyodor/code/github/code_review_ai/tests/script_1.py (5929 bytes)
+2025-09-15 12:43:16,983 - llm_interface.review_task - INFO - Created ReviewTask for 5694 characters of code
+2025-09-15 12:43:16,983 - gui.main_window - INFO - Started review task for script_1.py
+2025-09-15 12:43:16,983 - llm_interface.qwen_runner - INFO - Starting code review stream for 5694 characters of code
+2025-09-15 12:43:23,705 - llm_interface.qwen_runner - INFO - LLM connection test successful
+2025-09-15 12:43:47,016 - llm_interface.qwen_runner - WARNING - Attempt 1 failed: LLM request timed out: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30.0). Retrying in 1s...
+2025-09-15 12:44:18,048 - llm_interface.qwen_runner - WARNING - Attempt 2 failed: LLM request timed out: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=30.0). Retrying in 2s...
+2025-09-15 12:46:10,038 - llm_interface.review_task - INFO - ReviewTask completed successfully with 648 tokens
+2025-09-15 12:46:10,041 - gui.main_window - INFO - Task completed successfully
+2025-09-15 12:47:55,037 - llm_interface.review_task - INFO - Task ReviewTask cancelled
+2025-09-15 12:47:55,038 - gui.main_window - INFO - Application closing
